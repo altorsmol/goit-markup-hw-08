@@ -1,0 +1,222 @@
+/* Footer */
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg-color);
+}
+
+.page-footer {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.page-footer__address {
+  margin-top: 20px;
+}
+
+.page-footer__location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.nav-footer {
+  margin-top: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-links-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.social-links-footer {
+  margin-left: 70px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 165px;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.social-links-footer .social-icons__link {
+  fill: var(--main-bg-color);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.social-links-footer .social-icons__link:hover,
+.social-links-footer .social-icons__link:focus {
+  background-color: var(--hover-color);
+}
+
+.social-links-footer .social-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-footer .nav-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.subscription {
+  display: flex;
+  margin-left: 93px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+    margin-top: 0;
+  }
+}
+
+.subscription__field .subscription__title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.subscription__container {
+  display: flex;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.subscription__input {
+  display: inline-block;
+  padding: 15px 295px 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--main-bg-color);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    padding: 15px 295px 15px 16px;
+    width: 358px;
+    height: 50px;
+  }
+}
+
+.subscription__container.subscription__input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero__button.subscription__btn {
+  position: relative;
+  margin-left: 12px;
+  padding: 10px 62px 10px 29px;
+  width: 200px;
+  height: 50px;
+}
+
+.subscription__send-svg {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
